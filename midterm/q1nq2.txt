@@ -16,9 +16,9 @@ We add the probabilities since he can only go to England OR Italy OR Spain.
 Since the employee is guaranteed to travel, the probabilities of each country must add up to 100% meaning the probability he goes to Italy is 100% - P(E) – P(S) = 30%. 
 Doing the calculation, we get:
 
-((.5)(1200) + (.2)(1500) + (.3)(1600))/(10^6) = .00138
+P(COVID) = ((.5)(1200) + (.2)(1500) + (.3)(1600))/(10^6) = .00138
 
 A = employee went to England 
 B = employee contracted covid (could be because they went to England therefore A and B are not independent)
 
-P(A|B) =  P(A) P(B|A) = (.5)(.5)(1200/10^6) = 0.0003
+P(A|B) =  P(A) P(B|A)/P(B) = (.5)(1200/10^6)/P(COVID) = (.5)(1200/10^6)/.00138 = 0.434782608696
